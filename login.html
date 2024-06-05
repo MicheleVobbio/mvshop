@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Effettua il tuo accesso | M&V </title>
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/error.css">
+
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h2>Entra su M&V</h2>
+    <form id="validateForm" action="php/check_login.php" method="POST">
+      <div class="input-box">
+        <input type="text" name="username" id="username" placeholder="Inserisci il nome" required>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" id="password" placeholder="Inserisci password" required>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Accedi">
+      </div>
+      <div class="text">
+        <h3>Non hai ancora un account? <a href="register.html">Registrati subito</a></h3>
+      </div>
+    </form>
+    <span id="errore_mess"></span>
+  </div>
+
+
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>
